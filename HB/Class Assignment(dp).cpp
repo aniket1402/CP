@@ -2,6 +2,8 @@
 using namespace std;
 int dp[26][26];
 int numbers(int n){
+    // dp[i][0] => numbers ending at 0
+    // dp[i][1] => numebrs ending at 1
     dp[1][0] = 1;
     dp[1][1] = 1;
     for(int i=2;i<=n;i++){
